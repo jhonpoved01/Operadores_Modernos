@@ -29,3 +29,9 @@ const defaults = { tema: "claro", idioma: "es" };
 const personalizadas = { tema: "oscuro", idioma: "en" };
 const idiomaFinal = configurarUsuario(defaults, personalizadas);
 console.log("El idioma que quedó es: " + idiomaFinal); 
+
+//puntos transferencia
+import { crearEstudiante } from './apropiacion/ejer_5.js';
+const resultado = crearEstudiante("Saray", 5, 4, 3);
+console.log(resultado);
+crearEstudiante("Miguel", 5, "hola");

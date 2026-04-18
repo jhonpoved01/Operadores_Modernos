@@ -24,3 +24,8 @@ import { registrarActividad } from './apropiacion/ejer_3.js';
 registrarActividad({ nombre: "Tejer bufanda", fecha: "Hoy" });
 registrarActividad({ nombre: "Hacer ejercicio", fecha: "Mañana" });
 
+import { configurarUsuario } from './apropiacion/ejer_4.js';
+const defaults = { tema: "claro", idioma: "es" };
+const personalizadas = { tema: "oscuro", idioma: "en" };
+const idiomaFinal = configurarUsuario(defaults, personalizadas);
+console.log("El idioma que quedó es: " + idiomaFinal); 

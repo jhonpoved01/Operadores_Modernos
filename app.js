@@ -13,3 +13,11 @@ const pedido1 = procesarPedido(
     'lana negra'
 );
 console.log(pedido1);
+
+import { agregarInventario } from './apropiacion/ejer_2.js';
+const inventarioInicial = ["cámara", "trípode", "micrófono"];
+const inventarioActualizado = agregarInventario(inventarioInicial, "Luz LED");
+console.log("Original:", inventarioInicial); 
+console.log("Nuevo:", inventarioActualizado);
+
+

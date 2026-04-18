@@ -20,4 +20,7 @@ const inventarioActualizado = agregarInventario(inventarioInicial, "Luz LED");
 console.log("Original:", inventarioInicial); 
 console.log("Nuevo:", inventarioActualizado);
 
+import { registrarActividad } from './apropiacion/ejer_3.js';
+registrarActividad({ nombre: "Tejer bufanda", fecha: "Hoy" });
+registrarActividad({ nombre: "Hacer ejercicio", fecha: "Mañana" });
 

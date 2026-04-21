@@ -29,6 +29,19 @@ const defaults = { tema: "claro", idioma: "es" };
 const personalizadas = { tema: "oscuro", idioma: "en" };
 const idiomaFinal = configurarUsuario(defaults, personalizadas);
 console.log("El idioma que quedó es: " + idiomaFinal); 
+//ejercicio 5
+import { actualizarPerfil } from './perfil.js';
+
+const perfil = { nombre: 'Ana', edad: 20, ciudad: 'Bogotá' };
+
+const actualizado = actualizarPerfil(
+  perfil,
+  { edad: 22 },
+  { ciudad: 'Medellín' }
+);
+
+console.log(actualizado);
+// { nombre: 'Ana', edad: 22, ciudad: 'Medellín' }
 
 //puntos transferencia
 //1

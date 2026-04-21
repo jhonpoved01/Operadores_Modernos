@@ -29,6 +29,11 @@ const defaults = { tema: "claro", idioma: "es" };
 const personalizadas = { tema: "oscuro", idioma: "en" };
 const idiomaFinal = configurarUsuario(defaults, personalizadas);
 console.log("El idioma que quedó es: " + idiomaFinal); 
+//ejercicio 7
+import { evaluar } from "./evaluar.js";
+
+console.log(evaluar(10, 20, 30));     // 20
+console.log(evaluar(10, "x", 30));    // Error: Todos los valores deben ser numéricos
 
 //puntos transferencia
 //1

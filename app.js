@@ -29,7 +29,11 @@ const defaults = { tema: "claro", idioma: "es" };
 const personalizadas = { tema: "oscuro", idioma: "en" };
 const idiomaFinal = configurarUsuario(defaults, personalizadas);
 console.log("El idioma que quedó es: " + idiomaFinal); 
+//ejercicio 8
+import { fusionarColecciones } from "./fusionar.js";
 
+console.log(fusionarColecciones([1, 2], [3, 4]));   // [1, 2, 3, 4]
+console.log(fusionarColecciones([1, 2], "hola"));   // Error: Ambos parámetros deben ser arreglos
 //puntos transferencia
 //1
 import { crearEstudiante } from './apropiacion/ejer_5.js';

@@ -29,7 +29,15 @@ const defaults = { tema: "claro", idioma: "es" };
 const personalizadas = { tema: "oscuro", idioma: "en" };
 const idiomaFinal = configurarUsuario(defaults, personalizadas);
 console.log("El idioma que quedó es: " + idiomaFinal); 
+//ejercicio6 
+import { totalPrimerProducto } from "./ventas.js";
 
+const ventas = [
+  { producto: "teclado", detalles: { precio: 50, unidades: 3 } },
+  { producto: "mouse", detalles: { precio: 20, unidades: 5 } }
+];
+
+console.log(totalPrimerProducto(ventas)); 
 //puntos transferencia
 //1
 import { crearEstudiante } from './apropiacion/ejer_5.js';

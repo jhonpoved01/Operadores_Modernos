@@ -30,6 +30,18 @@ const personalizadas = { tema: "oscuro", idioma: "en" };
 const idiomaFinal = configurarUsuario(defaults, personalizadas);
 console.log("El idioma que quedó es: " + idiomaFinal); 
 
+//ejercicio 5 
+import { actualizarPerfil } from './perfil.js';
+
+const perfil = { nombre: "Ana", edad: 20 };
+
+const actualizado = actualizarPerfil(
+  perfil,
+  { edad: 22 },
+  { ciudad: "Medellín" }
+);
+
+console.log(actualizado);
 //puntos transferencia
 //1
 import { crearEstudiante } from './apropiacion/ejer_5.js';

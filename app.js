@@ -48,3 +48,11 @@ const catalogoB = [
 const resultado = fusionarCatalogos(catalogoA, catalogoB);
 console.log("Catálogo unido y ordenado:");
 console.log(resultado);
+import { estadisticas } from "./estadisticas.js";
+
+const jugadores = [
+  { nombre: "Ana", stats: { puntos: 20, asistencias: 5 } },
+  { nombre: "Luis", stats: { puntos: 15, asistencias: 7 } }
+];
+
+console.log(estadisticas(jugadores));

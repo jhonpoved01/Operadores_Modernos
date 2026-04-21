@@ -48,3 +48,14 @@ const catalogoB = [
 const resultado = fusionarCatalogos(catalogoA, catalogoB);
 console.log("Catálogo unido y ordenado:");
 console.log(resultado);
+
+//ejercicio 3
+import { procesarCompra } from "./procesarCompra.js";
+
+const cliente = { nombre: "Ana", correo: "ana@mail.com" };
+const productos = [
+  { nombre: "Laptop", precio: 1000 },
+  { nombre: "Mouse", precio: 50 }
+];
+
+console.log(procesarCompra(cliente, productos));
